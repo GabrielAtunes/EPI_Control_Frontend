@@ -23,7 +23,7 @@ import { NfModal } from "./modals/NfModal";
 
 // --- COMPONENTE DE CARD ---
 const StatCard = ({ title, value, icon, gradient }: any) => (
-  <div className="flex-1 min-w-[240px] bg-[#1c212d] rounded-xl p-5 border border-gray-800 shadow-sm relative overflow-hidden flex items-center gap-4">
+  <div className="flex-1 min-w-240px bg-[#1c212d] rounded-xl p-5 border border-gray-800 shadow-sm relative overflow-hidden flex items-center gap-4">
     {/* BACKGROUND */}
     <div
       className={`absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-[0.08] bg-linear-to-br ${gradient}`}
