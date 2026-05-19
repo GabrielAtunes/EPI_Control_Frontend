@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@config "../tailwind.config.js"; /* Esta é a linha que conecta o nosso tema! */
+
+@layer base {
+  html {
+    @apply bg-brand-light text-text-primary-light antialiased;
+  }
+
+  html.dark {
+    @apply bg-brand-dark text-text-primary-dark;
+  }
+
+  *,
+  *::before,
+  *::after {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-600;
+}
